@@ -18,7 +18,7 @@ Bring the prelude into scope:
 use slots_slice::prelude::*;
 ```
 
-The highlight of the crate are [`SlotsTrait`](crate::SlotsTrait) and [`SlotsMutTrait`](crate::SlotsMutTrait) which add methods for accessing and manipulating slots immutably and mutably. These operate on anything that implements [`AsRef`](core::convert::AsRef)`<`[`[T]`](https://doc.rust-lang.org/std/primitive.slice.html)`>` so they are available right away on structs such as array and [`Vec<T>`](Vec).
+The highlight of the crate are [`SlotsTrait`](crate::SlotsTrait) and [`SlotsMutTrait`](crate::SlotsMutTrait) which add methods for accessing and manipulating slots immutably and mutably. These operate on anything that implements [`AsRef`](core::convert::AsRef)<[`[T]`](https://doc.rust-lang.org/std/primitive.slice.html)> so they are available right away on structs such as array and [`Vec<T>`](std::vec::Vec).
 
 Overview of [`SlotsTrait`](crate::SlotsTrait):
 
