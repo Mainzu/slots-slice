@@ -1,6 +1,6 @@
 # Slots Slice
 
-[![Latest Version](https://img.shields.io/crates/v/slots)](https://crates.io/crates/slots)
+[![Latest Version](https://img.shields.io/crates/v/slots-slice)](https://crates.io/crates/slots-slice)
 
 This is a small crate that aims provides utilities for manipulating slices of optional values, referred to as [`Slots<T>`].
 
