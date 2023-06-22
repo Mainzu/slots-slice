@@ -2,7 +2,7 @@
 
 [![Latest Version](https://img.shields.io/crates/v/slots-slice)](https://crates.io/crates/slots-slice)
 
-This is a small crate that aims provides utilities for manipulating slices of optional values, referred to as [`Slots<T>`].
+This is a small crate that aims provides utilities for manipulating slices of optional values, referred to as [`Slots<T>`](crate::Slots).
 
 ## Features
 
@@ -18,9 +18,9 @@ Bring the prelude into scope:
 use slots_slice::prelude::*;
 ```
 
-The highlight of the crate are [`SlotsTrait`] and [`SlotsMutTrait`] which add methods for accessing and manipulating slots immutably and mutably. These operate on anything that implements [`AsRef`]`<`[`[T]`](https://doc.rust-lang.org/std/primitive.slice.html)`>` so they are available right away on structs such as array and [`Vec<T>`].
+The highlight of the crate are [`SlotsTrait`](crate::SlotsTrait) and [`SlotsMutTrait`](crate::SlotsMutTrait) which add methods for accessing and manipulating slots immutably and mutably. These operate on anything that implements [`AsRef`](core::convert::AsRef)`<`[`[T]`](https://doc.rust-lang.org/std/primitive.slice.html)`>` so they are available right away on structs such as array and [`Vec<T>`](Vec).
 
-Overview of [`SlotsTrait`]:
+Overview of [`SlotsTrait`](crate::SlotsTrait):
 
 ```rust
 use slots_slice::prelude::*;
@@ -36,7 +36,7 @@ assert_eq!(slots.front_value(), Some(&'a'));
 assert_eq!(slots.front_entry(), Some((1, &'a')));
 ```
 
-[`SlotsMutTrait`] provide the mutable version of `SlotsTrait` as well as collapse functionality.
+[`SlotsMutTrait`](crate::SlotsMutTrait) provide the mutable version of `SlotsTrait` as well as collapse functionality.
 
 ```rust
 use slots_slice::prelude::*;
